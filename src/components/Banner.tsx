@@ -23,7 +23,8 @@ function Banner({ }: Props) {
                         </p>
                     </div>
                     <div className={styles.download__modal}>
-                        <h3>download resume in different formats</h3>
+                        <p style={{ fontWeight: 800, fontSize: 30 }}>Download Résumé</p>
+                        <p style={{ marginTop: 5 }}> Want to know more about me? Feel free to get a copy of my up-to-date résumé.</p>
                         <div className={styles.download__options}>
                             <div className={styles.download__box}>
                                 <img src={icon} width="30" height="30" alt="" />

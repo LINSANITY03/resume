@@ -27,11 +27,21 @@
 .download__modal{
     display: block;
     margin-top: 70px;
-    border: 2px;
-    border-color: aqua;
-    border-style: dashed;
+    text-align: center;
+    background: rgb(52,168,83, 0.4);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .download__options{
+    margin-top: 10px;
     display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download__box{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
 }
