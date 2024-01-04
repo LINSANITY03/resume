@@ -1,0 +1,37 @@
+.banner_main{
+    padding-top: 75px;
+    background-color: rgb(255, 255, 255);
+}
+
+.banner_container{
+    margin-top: 60px;
+}
+
+.box__container{
+    display: grid;
+    grid-template-rows: (1, auto);
+    justify-content: center;
+}
+
+.description{
+    text-align: start;
+}
+
+.description_text{
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: rgb(66,133,244);
+    background-image: linear-gradient(to bottom,rgb(66,133,244) 25%,rgb(52,168,83) 75%);
+}
+
+.download__modal{
+    display: block;
+    margin-top: 70px;
+    border: 2px;
+    border-color: aqua;
+    border-style: dashed;
+}
+
+.download__options{
+    display: flex;
+}

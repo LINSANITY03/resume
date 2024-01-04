@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+p{
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins'), url(./utils/Poppins-Regular.ttf) format('truetype');

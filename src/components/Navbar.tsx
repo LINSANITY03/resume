@@ -7,7 +7,6 @@ function Navbar({ }: Props) {
     return (
         // main container
         <nav className={styles.main_navbar}>
-            <img src={logo} width="50" height="50" alt="" />
             <ul className={styles.nav_components}>
                 <li>Home</li>
                 <li>Skills</li>
@@ -15,7 +14,6 @@ function Navbar({ }: Props) {
                 <li>Contact</li>
                 <li>My Journey</li>
             </ul>
-            {/* options */}
         </nav>
     )
 }

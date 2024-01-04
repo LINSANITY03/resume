@@ -1,9 +1,8 @@
 .main_navbar{
-    background: aqua;
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 20px;
 }
 
@@ -17,6 +16,6 @@
 }
 
 .nav_components > li:hover{
-    color: white;
+    color: rgb(75, 85, 109);
     cursor: pointer;
 }
