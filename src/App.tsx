@@ -1,4 +1,3 @@
-import './App.css';
 import Home from "./layouts/index"
 
 function App() {

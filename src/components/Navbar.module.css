@@ -1,0 +1,22 @@
+.main_navbar{
+    background: aqua;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav_components{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 50px;
+    list-style: none;
+    margin-right: 10%;
+    font-weight: 600;
+}
+
+.nav_components > li:hover{
+    color: white;
+    cursor: pointer;
+}
