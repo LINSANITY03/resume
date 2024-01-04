@@ -43,5 +43,30 @@
 .download__box{
     display: flex;
     justify-content: center;
-    border-style: solid;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+}
+
+.pdf_icon, .docx_icon{
+    color: white
+}
+
+.pdf__color{
+    background: rgb(167, 31, 31); 
+}
+
+.docx__color{
+    background: rgb(32, 65, 211); 
+}
+.pdf__cont, .docx__cont{
+    color: white;
+    padding: 10px 10px;
+    border-radius: 13px;
+}
+
+.pdf__cont:hover{
+    background: rgb(243, 234, 234);
 }

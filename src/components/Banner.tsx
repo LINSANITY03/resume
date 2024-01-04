@@ -1,6 +1,8 @@
 import React from 'react'
 import icon from "../logo.svg"
 import styles from "./Banner.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFile, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 type Props = {}
 
 function Banner({ }: Props) {
@@ -26,13 +28,13 @@ function Banner({ }: Props) {
                         <p style={{ fontWeight: 800, fontSize: 30 }}>Download Résumé</p>
                         <p style={{ marginTop: 5 }}> Want to know more about me? Feel free to get a copy of my up-to-date résumé.</p>
                         <div className={styles.download__options}>
-                            <div className={styles.download__box}>
-                                <img src={icon} width="30" height="30" alt="" />
+                            <div className={`${styles.download__box} ${styles.pdf__cont} ${styles.pdf__color}`}>
+                                <FontAwesomeIcon icon={faFilePdf} bounce className={styles.pdf_icon} />
                                 <p>Pdf</p>
                             </div>
 
-                            <div className={styles.download__box}>
-                                <img src={icon} width="30" height="30" alt="" />
+                            <div className={`${styles.download__box} ${styles.docx__cont} ${styles.docx__color}`}>
+                                <FontAwesomeIcon icon={faFile} fade className={styles.docx_icon} />
                                 <p>Docx</p>
                             </div>
                         </div>
