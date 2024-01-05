@@ -26,7 +26,7 @@
 
 .download__modal{
     display: block;
-    margin-top: 70px;
+    margin-top: 85px;
     text-align: center;
     background: rgb(52,168,83, 0.4);
     padding: 10px;
@@ -55,11 +55,11 @@
 }
 
 .pdf__color{
-    background: rgb(167, 31, 31); 
+    background: rgb(167, 31, 31, 0.9);
 }
 
 .docx__color{
-    background: rgb(32, 65, 211); 
+    background: rgb(32, 65, 211, 0.9); 
 }
 .pdf__cont, .docx__cont{
     color: white;
@@ -68,5 +68,9 @@
 }
 
 .pdf__cont:hover{
-    background: rgb(243, 234, 234);
+    background: rgb(167, 31, 31); 
+}
+
+.docx__cont:hover{
+    background: rgb(32, 65, 211); 
 }

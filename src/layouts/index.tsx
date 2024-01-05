@@ -1,12 +1,12 @@
 import Banner from "../components/Banner"
 import Navbar from "../components/Navbar"
-import Skills from "../components/Skills"
+import Experience from "../components/Experience"
 
 function index() {
     return (<>
         <Navbar />
         <Banner />
-        <Skills />
+        <Experience />
     </>
     )
 }

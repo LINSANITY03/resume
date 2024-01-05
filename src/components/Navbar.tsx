@@ -9,8 +9,8 @@ function Navbar({ }: Props) {
         <nav className={styles.main_navbar}>
             <ul className={styles.nav_components}>
                 <li>Home</li>
-                <li>Skills</li>
-                <li>Projects</li>
+                <li>Experience</li>
+                <li>Project</li>
                 <li>Contact</li>
                 <li>My Journey</li>
             </ul>
