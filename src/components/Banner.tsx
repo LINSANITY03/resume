@@ -34,7 +34,7 @@ function Banner({ }: Props) {
                             </div>
 
                             <div className={`${styles.download__box} ${styles.docx__cont} ${styles.docx__color}`}>
-                                <FontAwesomeIcon icon={faFile} fade className={styles.docx_icon} />
+                                <FontAwesomeIcon icon={faFile} className={styles.docx_icon} />
                                 <p>Docx</p>
                             </div>
                         </div>
