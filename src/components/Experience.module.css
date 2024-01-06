@@ -24,3 +24,54 @@
     height: 1px;
     background-color: white;
 }
+
+.experience__container{
+    padding: 20px;
+}
+
+.company__text{
+    color: rgb(10, 54, 95);
+}
+
+.work__duration{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.exp__highlights > ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.exp__highlights > ul > li{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.exp__highlights > ul > li::before{
+    content: " > ";
+    position: absolute;
+    left: 10px;
+}
+
+.skills__highlight{
+    display: flex;
+    margin-top: 20px;
+}
+
+.skills__highlight > ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills__highlight > ul >li{
+    background: rgb(66,133,244, 1);
+    padding: 5px;
+    border-radius: 12px;
+    font-weight: 600;
+}
