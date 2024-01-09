@@ -1,0 +1,45 @@
+.main__container{
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.professional__container{
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(4, 18, 212, 0.75);
+    color: white;
+}
+
+.title__name{
+    font-size: 4em;
+    width: fit-content;
+}
+
+.each__module{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.left__line{
+    border-left: 5px solid white;
+}
+
+.project__container{
+    width: 90%;
+    padding: 20px;
+}
+
+.project__name{
+    position: relative;
+    background: black;
+    width: fit-content;
+    padding: 20px;
+    left: -40px;
+    top: -10px
+}
+
+.description{
+    background: rgb(4, 18, 212);
+    padding: 20px;
+}
