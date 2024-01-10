@@ -1,5 +1,5 @@
-import React from 'react'
 import NewsSarathi from "../assets/news_sarathi/dashboard.png"
+import Cashmere from "../assets/cashmere/cashmere.jpg"
 
 interface ProjectDetail {
     project_name: string,
@@ -25,8 +25,8 @@ const pro_professional: ProjectDetail[] = [
     },
     {
         project_name: 'Shangrila Cashmere',
-        img: NewsSarathi,
-        description: "An In-House management system which handles orders and maintain materials stock.",
+        img: Cashmere,
+        description: "An In-House web-app management system which handles orders and maintain materials stock.",
         skills: [
             "Visual Studio",
             "Python",

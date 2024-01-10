@@ -54,7 +54,6 @@
     position: relative;
     z-index: 1;
     top: -50px;
-    background-color: aqua;
 }
 
 .project__details{
@@ -84,12 +83,12 @@
 
 .sideProject__container{
     margin-top: 50px;
+    color: white;
 }
 
 .sd_title{
     margin-top: 50px;
     font-size: 3em;
-    color: white;
     display: flex;
     align-items: center;
 }
@@ -99,4 +98,10 @@
     flex: 1;
     height: 1px;
     background-color: white;
+}
+
+.github__actions{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
 }
