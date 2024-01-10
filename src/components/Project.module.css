@@ -36,10 +36,43 @@
     width: fit-content;
     padding: 20px;
     left: -40px;
-    top: -10px
+    top: -10px;
+    z-index: 3;
 }
 
+.project__content{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    
+}
+
+.ns__img{
+    position: relative;
+    z-index: 1;
+    top: -50px;
+    background-color: aqua;
+}
+
+.project__details{
+    position: relative;
+    left: -30px;
+    text-align: right;
+    width: 100%;
+    z-index: 10;
+    
+}
 .description{
     background: rgb(4, 18, 212);
     padding: 20px;
+}
+
+.skill__used{
+    font-size: 0.8em;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.external__link{
+    color: white;
 }
