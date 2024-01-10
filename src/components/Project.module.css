@@ -3,10 +3,14 @@
     padding: 20px;
 }
 
-.professional__container{
-    border-radius: 15px;
-    padding: 20px;
+.projects__container{
+
     background: rgba(4, 18, 212, 0.75);
+    border-radius: 15px;
+}
+
+.professional__container{
+    padding: 20px;
     color: white;
 }
 
@@ -69,10 +73,30 @@
 .skill__used{
     font-size: 0.8em;
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     list-style: none;
-    justify-content: space-between;
 }
 
 .external__link{
     color: white;
+}
+
+.sideProject__container{
+    margin-top: 50px;
+}
+
+.sd_title{
+    margin-top: 50px;
+    font-size: 3em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.sd_title::before, .sd_title::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: white;
 }
