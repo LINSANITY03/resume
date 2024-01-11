@@ -18,9 +18,18 @@ function Contact({ }: Props) {
             {/* gmail */}
             {/* github */}
             <div className={style.icons__list}>
-                <FontAwesomeIcon icon={faLinkedin} size='2x' />
-                <FontAwesomeIcon icon={faGithub} size='2x' />
-                <FontAwesomeIcon icon={faEnvelope} size='2x' />
+                <a style={{ color: 'white' }} href="https://www.linkedin.com/in/pujan-thing-46ba4a1bb/" target='_blank' rel="noreferrer">
+
+                    <FontAwesomeIcon icon={faLinkedin} size='2x' />
+                </a>
+                <a style={{ color: 'white' }} href="https://github.com/LINSANITY03" target='_blank' rel="noreferrer">
+
+                    <FontAwesomeIcon icon={faGithub} size='2x' />
+                </a>
+                <a style={{ color: 'white' }} href="mailto:pujantamang92@gmail.com" target='_blank' rel="noreferrer">
+
+                    <FontAwesomeIcon icon={faEnvelope} size='2x' />
+                </a>
             </div>
         </section>
     )
