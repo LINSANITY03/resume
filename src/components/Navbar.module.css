@@ -7,6 +7,12 @@
     z-index: 99;
 }
 
+.navbar__change{
+    background: whitesmoke;
+    transition: all 0.5s ease-out;
+    box-shadow: 3px 10px 17px #bdbebf;
+}
+
 .nav_components{
     display: grid;
     grid-template-columns: repeat(5, auto);
