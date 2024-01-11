@@ -2,6 +2,7 @@ import Banner from "../components/Banner"
 import Navbar from "../components/Navbar"
 import Experience from "../components/Experience"
 import Project from "../components/Project"
+import Contact from "../components/Contact"
 
 function index() {
     return (<>
@@ -9,6 +10,7 @@ function index() {
         <Banner />
         <Experience />
         <Project />
+        <Contact />
     </>
     )
 }

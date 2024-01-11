@@ -12,7 +12,6 @@ function Navbar({ }: Props) {
                 <li>Experience</li>
                 <li>Project</li>
                 <li>Contact</li>
-                <li>My Journey</li>
             </ul>
         </nav>
     )
