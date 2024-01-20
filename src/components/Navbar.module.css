@@ -21,8 +21,3 @@
     margin-right: 10%;
     font-weight: 600;
 }
-
-.nav_components > li:hover{
-    color: rgb(75, 85, 109);
-    cursor: pointer;
-}

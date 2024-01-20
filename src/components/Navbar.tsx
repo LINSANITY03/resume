@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css"
-type Props = {}
+import Link from "../utils/Link";
+import { SelectedPage } from "../utils/types";
 
-function Navbar({ }: Props) {
+type Props = {
+    selectedPage: SelectedPage;
+    setSelectedPage: (value: SelectedPage) => void;
+}
+
+function Navbar(Props: Props) {
     const [show, handleShow] = useState(false);
 
     useEffect(() => {
@@ -25,10 +31,10 @@ function Navbar({ }: Props) {
         // main container
         <nav className={`${styles.main_navbar} ${show && `${styles.navbar__change}`}`}>
             <ul className={styles.nav_components}>
-                <li>Home</li>
-                <li>Experience</li>
-                <li>Project</li>
-                <li>Contact</li>
+                <Link page="Home" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
+                <Link page="Experience" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
+                <Link page="Project" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
+                <Link page="Contact" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
             </ul>
         </nav>
     )

@@ -1,15 +1,16 @@
-import React from 'react'
-
 import style from "./Contact.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { SelectedPage } from '../utils/types'
 
-type Props = {}
+type Props = {
+    setSelectedPage: (value: SelectedPage) => void;
+};
 
 function Contact({ }: Props) {
     return (
-        <section className={style.contact__container}>
+        <section className={style.contact__container} id="contact">
             {/* get in touch */}
             <p className={style.contact__title}>Get in touch?</p>
             {/* inspiring notes */}

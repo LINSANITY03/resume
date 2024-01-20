@@ -1,13 +1,15 @@
-import React from 'react'
-import icon from "../logo.svg"
 import styles from "./Banner.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile, faFilePdf } from '@fortawesome/free-solid-svg-icons';
-type Props = {}
+import { SelectedPage } from "../utils/types";
+
+type Props = {
+    setSelectedPage: (value: SelectedPage) => void;
+};
 
 function Banner({ }: Props) {
     return (
-        <section className={styles.banner_main}>
+        <section className={styles.banner_main} id="home">
             <div className={styles.banner_container}>
                 <div className={styles.box__container}>
                     <div className={styles.description}>

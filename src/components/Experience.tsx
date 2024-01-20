@@ -1,16 +1,19 @@
 import style from "./Experience.module.css"
 import ExperienceData from "../helper/Experience_data"
-type Props = {}
+import { SelectedPage } from "../utils/types";
+type Props = {
+    setSelectedPage: (value: SelectedPage) => void;
+};
 
 function Experience({ }: Props) {
     return (
-        <section className={style.main__container}>
+        <section className={style.main__container} id="experience">
             <div className={style.working__container}>
                 <p className={style.title__text}>Experience</p>
                 {ExperienceData.map((each, index) => {
                     return (
 
-                        <div className={style.experience__container}>
+                        <div className={style.experience__container} key={index}>
                             <h3 style={{ fontSize: 25, lineHeight: 0.1, color: 'white' }}>{each.title}
                                 <span className={style.company__text}> @{each.company}.</span>
                             </h3>
@@ -19,7 +22,7 @@ function Experience({ }: Props) {
                                 <ul>
                                     {each.highlights.map((point, idx) => {
                                         return (
-                                            <li>{point}</li>
+                                            <li key={idx}>{point}</li>
                                         )
                                     })}
                                 </ul>
@@ -29,7 +32,7 @@ function Experience({ }: Props) {
                                 <ul>
                                     {each.skills.map((skill, ix) => {
                                         return (
-                                            <li>{skill}</li>
+                                            <li key={ix}>{skill}</li>
                                         )
                                     })}
                                 </ul>
