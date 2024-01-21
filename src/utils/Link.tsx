@@ -12,7 +12,7 @@ const Link = (props: Props) => {
 
     return (
         <AnchorLink
-            className={`${props.selectedPage == lowerCasePage ? "red" : ""}`}
+            className={`${props.selectedPage === lowerCasePage ? "red" : ""}`}
             href={`#${lowerCasePage}`}
             onClick={() => props.setSelectedPage(lowerCasePage)}
             offset='100'

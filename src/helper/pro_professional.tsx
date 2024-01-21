@@ -1,4 +1,4 @@
-import NewsSarathi from "../assets/news_sarathi/dashboard.png"
+import NewsSarathi from "../assets/news_sarathi/newssarathi.png"
 import Cashmere from "../assets/cashmere/cashmere.jpg"
 
 interface ProjectDetail {
