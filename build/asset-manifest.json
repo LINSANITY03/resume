@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.418ff382.css",
+    "main.js": "/static/js/main.9bae15cf.js",
+    "static/js/787.883ba16e.chunk.js": "/static/js/787.883ba16e.chunk.js",
+    "static/media/dashboard.png": "/static/media/dashboard.e76929cee1d683ba9ffc.png",
+    "static/media/newssarathi.png": "/static/media/newssarathi.fad748cc93668137f41a.png",
+    "static/media/cashmere.jpg": "/static/media/cashmere.51afa687093518c59019.jpg",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/events.png": "/static/media/events.ebd70e76b1fe434395fe.png",
+    "static/media/game.jpg": "/static/media/game.cbcae648ad2d35a6b09c.jpg",
+    "static/media/cli.png": "/static/media/cli.7585e71b21bd08bface2.png",
+    "index.html": "/index.html",
+    "main.418ff382.css.map": "/static/css/main.418ff382.css.map",
+    "main.9bae15cf.js.map": "/static/js/main.9bae15cf.js.map",
+    "787.883ba16e.chunk.js.map": "/static/js/787.883ba16e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.418ff382.css",
+    "static/js/main.9bae15cf.js"
+  ]
+}
