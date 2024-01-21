@@ -11,13 +11,8 @@ type Props = {
 function Contact({ }: Props) {
     return (
         <section className={style.contact__container} id="contact">
-            {/* get in touch */}
             <p className={style.contact__title}>Get in touch?</p>
-            {/* inspiring notes */}
             <p className={style.short__description}>Connect with me on Github, linkedin and feel free to reach out.</p>
-            {/* linkedin */}
-            {/* gmail */}
-            {/* github */}
             <div className={style.icons__list}>
                 <a style={{ color: 'white' }} href="https://www.linkedin.com/in/pujan-thing-46ba4a1bb/" target='_blank' rel="noreferrer">
 

@@ -1,0 +1,15 @@
+.github__actions{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.title{
+    font-size: 3em;
+    text-align: center;
+}
+
+.link_module{
+    font-size: 1.5em;
+    text-align: center;
+}

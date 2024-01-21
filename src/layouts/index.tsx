@@ -5,6 +5,7 @@ import Project from "../components/Project"
 import Contact from "../components/Contact"
 import { SelectedPage } from "../utils/types"
 import { useState } from "react"
+import Referral from "../components/Referral"
 
 function Index() {
     const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -14,6 +15,7 @@ function Index() {
         <Banner setSelectedPage={setSelectedPage} />
         <Experience setSelectedPage={setSelectedPage} />
         <Project setSelectedPage={setSelectedPage} />
+        <Referral />
         <Contact setSelectedPage={setSelectedPage} />
     </>
     )
