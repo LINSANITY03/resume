@@ -99,3 +99,9 @@
     height: 1px;
     background-color: white;
 }
+
+.github__actions{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
