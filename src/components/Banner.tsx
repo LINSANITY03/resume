@@ -8,6 +8,30 @@ type Props = {
 };
 
 function Banner({ }: Props) {
+    const handlePDFDownloadClick = () => {
+        const fileToDownload = '../utils/Pujan Thing-Software Engineer.pdf';
+
+        const link = document.createElement('a');
+        link.href = fileToDownload;
+        link.download = "Pujan Thing-Software Engineer.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const handleDOCXDownloadClick = () => {
+        // Replace 'your_file_url' with the actual URL of the file you want to download
+        const fileToDownload = '../utils/Pujan Thing-Software Engineer.docx';
+
+        // Create a hidden anchor element to trigger the download
+        const link = document.createElement('a');
+        link.href = fileToDownload;
+        link.download = "Pujan Thing-Software Engineer.docx";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <section className={styles.banner_main} id="home">
             <div className={styles.banner_container}>
@@ -30,12 +54,14 @@ function Banner({ }: Props) {
                         <p style={{ fontWeight: 800, fontSize: 30 }}>Download Résumé</p>
                         <p style={{ marginTop: 5 }}> Want to know more about me? Feel free to get a copy of my up-to-date résumé.</p>
                         <div className={styles.download__options}>
-                            <div className={`${styles.download__box} ${styles.pdf__cont} ${styles.pdf__color}`}>
+
+                            <div className={`${styles.download__box} ${styles.pdf__cont} ${styles.pdf__color}`} onClick={handlePDFDownloadClick}>
+
                                 <FontAwesomeIcon icon={faFilePdf} bounce className={styles.pdf_icon} />
                                 <p>Pdf</p>
                             </div>
 
-                            <div className={`${styles.download__box} ${styles.docx__cont} ${styles.docx__color}`}>
+                            <div className={`${styles.download__box} ${styles.docx__cont} ${styles.docx__color}`} onClick={handleDOCXDownloadClick}>
                                 <FontAwesomeIcon icon={faFile} className={styles.docx_icon} />
                                 <p>Docx</p>
                             </div>
