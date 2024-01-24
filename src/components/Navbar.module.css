@@ -21,3 +21,12 @@
     margin-right: 10%;
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+
+    .main_navbar > ul {
+        display: none;
+        color: aqua;
+    }
+
+}
