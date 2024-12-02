@@ -14,24 +14,19 @@ const Experience: experience_data[] = [
         started_at: "Jan 2021",
         finished_at: "Oct 2022",
         highlights: [
-            `Designed and built the backend architecture of an internal software system for a B2B company,
-            automating order management and monitoring of store stocks. This increased production
-            speed by 22%.`,
-            `Developed 100% RESTful API using Django and MySQL for controlling user functions, integrating
-            with JavaScript/Flutter on the frontend.`,
-            `Create new text mining tools to improve data collection efficiency.`,
+            `Developed and implemented a custom CRM system using Python and Django, boosting productivity through automating manual processes.`,
+            `Built RESTful APIs with Django and MySQL to handle user authentication and data processing, integrating with JavaScript/Flutter on the frontend.`,
+            `Automated data extraction from PDFs into MySQL databases, improving data collection efficiency.`,
             `Implemented responsive and user-friendly front-end interfaces using HTML, CSS and JavaScript
             frameworks.`,
-            `Mentored and provided guidance to 3 junior backend developers on Django and documented
-            best practices within the organization.`
+            `Mentored interns on Python development best practices, ensuring quality and consistency in project deliverables.`
         ],
         skills: [
             "Python",
-            "Django",
             "Django-rest-framework",
-            "Flutter",
-            "Non/Relational database",
-            "Html/Css/Js",
+            "MYSQL",
+            "POSTGRESQL",
+            "Html/Css",
             "ReactJs",
             "HtmlX",
             "Redis",
