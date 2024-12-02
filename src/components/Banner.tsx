@@ -9,11 +9,11 @@ type Props = {
 
 function Banner({ }: Props) {
     const handlePDFDownloadClick = () => {
-        const fileToDownload = '../utils/Pujan Thing-Software Engineer.pdf';
+        const fileToDownload = '../utils/Pujan_Thing_Software_Developer.pdf';
 
         const link = document.createElement('a');
         link.href = fileToDownload;
-        link.download = "Pujan Thing-Software Engineer.pdf";
+        link.download = "Pujan_Thing_Software_Developer.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -21,12 +21,12 @@ function Banner({ }: Props) {
 
     const handleDOCXDownloadClick = () => {
         // Replace 'your_file_url' with the actual URL of the file you want to download
-        const fileToDownload = '../utils/Pujan Thing-Software Engineer.docx';
+        const fileToDownload = '../utils/Pujan_Thing_Software_Developer.docx';
 
         // Create a hidden anchor element to trigger the download
         const link = document.createElement('a');
         link.href = fileToDownload;
-        link.download = "Pujan Thing-Software Engineer.docx";
+        link.download = "Pujan_Thing_Software_Developer.docx";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
