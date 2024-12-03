@@ -3,6 +3,7 @@ import Game from "../assets/algo_visu/game.jpg"
 import Dashboard from "../assets/slp/dashboard.png"
 import events from "../assets/sofhe/events.png"
 import sentiment from "../assets/sentiment_analysis/code.png"
+import confusion_matrix from "../assets/fraud_detection/confusion_matrix.png"
 
 interface Project {
     project_name: string,
@@ -74,6 +75,19 @@ const SideProjectData: Project[] = [
             "PyTest"
         ],
         link: ["https://github.com/LINSANITY03/Real-time-sentiment-analysis"]
+    },
+    {
+        project_name: 'Fraud Detection in Financial Transactions Using Autoencoders',
+        img: confusion_matrix,
+        description: `Autoencoders are unsupervised neural networks used for anomaly detection. The idea behind using them for fraud detection is that they are trained to learn a compressed representation of the data (normal transactions). When a fraudulent transaction occurs, the reconstruction error of the autoencoder will be significantly higher, signaling that the transaction is anomalous.`,
+        skills: [
+            "PyTorch",
+            "Jupyter Notebook",
+            "Pandas",
+            "Matplotlib",
+            "Seaborn"
+        ],
+        link: ["https://github.com/LINSANITY03/Fraud_detection_using_Autoencoders"]
     },
 
 
