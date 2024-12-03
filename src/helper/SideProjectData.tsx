@@ -2,6 +2,7 @@ import fsa from "../assets/fileserverapp/cli.png"
 import Game from "../assets/algo_visu/game.jpg"
 import Dashboard from "../assets/slp/dashboard.png"
 import events from "../assets/sofhe/events.png"
+import sentiment from "../assets/sentiment_analysis/code.png"
 
 interface Project {
     project_name: string,
@@ -62,8 +63,20 @@ const SideProjectData: Project[] = [
             "MYSQL"
         ],
         link: ["https://www.linkedin.com/in/pujan-thing-46ba4a1bb/details/projects/1353199704/multiple-media-viewer/?profileId=ACoAADM78hMBT7uXzsbt6oZQCkDAFI-nK3JF6TU&treasuryMediaId=1704307845659"]
-    }
+    },
+    {
+        project_name: 'Real time Sentiment Analaysis',
+        img: sentiment,
+        description: `Analyse the user text input in real time and provide sentiment analysis.`,
+        skills: [
+            "FastAPI",
+            "TensorFlow",
+            "PyTest"
+        ],
+        link: ["https://github.com/LINSANITY03/Real-time-sentiment-analysis"]
+    },
+
 
 ]
 
-export default SideProjectData
+export default SideProjectData.reverse()
