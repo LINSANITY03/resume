@@ -1,5 +1,6 @@
 import NewsSarathi from "../assets/news_sarathi/newssarathi.png"
 import Cashmere from "../assets/cashmere/cashmere.jpg"
+import MyagentsAI from "../assets/myagents_ai/myagentsai.png"
 
 interface ProjectDetail {
     project_name: string,
@@ -10,6 +11,22 @@ interface ProjectDetail {
 }
 
 const pro_professional: ProjectDetail[] = [
+    {
+        project_name: 'MyagentsAI',
+        img: MyagentsAI,
+        description: "MyAgentsAI provides every manager with a dedicated AI talent agent that integrates with daily workflows to drive real-time leadership growth and skill-building.",
+        skills: [
+            "Fastapi",
+            "POSTGRESQL",
+            "Redis",
+            "Docker",
+            "Github Action",
+            "Next.JS",
+            "Faiss",
+            "Azure"
+        ],
+        link: "https://myagents-ai.com/"
+    },
     {
         project_name: 'NewsSarathi',
         img: NewsSarathi,

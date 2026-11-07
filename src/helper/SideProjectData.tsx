@@ -4,6 +4,8 @@ import Dashboard from "../assets/slp/dashboard.png"
 import events from "../assets/sofhe/events.png"
 import sentiment from "../assets/sentiment_analysis/code.png"
 import confusion_matrix from "../assets/fraud_detection/confusion_matrix.png"
+import mediahub from "../assets/media_hub/mediahub.png"
+import conversify from "../assets/conversify/conversify.png"
 
 interface Project {
     project_name: string,
@@ -88,6 +90,36 @@ const SideProjectData: Project[] = [
             "Seaborn"
         ],
         link: ["https://github.com/LINSANITY03/Fraud_detection_using_Autoencoders"]
+    },
+    {
+        project_name: 'Conversify',
+        img: conversify,
+        description: `Document Analyzer & Chat is a microservice-oriented application that enables users to upload documents, extract their content, and interact with them through natural language queries. The core idea is to turn static documents into interactive knowledge sources.`,
+        skills: [
+            "Django-rest-framework",
+            "Fastapi",
+            "Hugginface",
+            "Docker",
+            "whisper",
+            "n8n"
+        ],
+        link: ["https://github.com/LINSANITY03/Conversify"]
+    },
+    {
+        project_name: 'MediAlertHub',
+        img: mediahub,
+        description: `A healthcare logistics tool that connects doctors’ disease reports with supply chain management, ensuring timely emergency response and resource distribution.`,
+        skills: [
+            "Fastapi",
+            "RAG",
+            "LangChain",
+            "Faiss",
+            "HuggingFace",
+            "Graphql",
+            "Next.JS",
+            "Docker"
+        ],
+        link: ["https://github.com/LINSANITY03/MediAlertHub"]
     },
 
 

@@ -7,26 +7,27 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
+const Resume_file_name = "Pujan_Thing_Resume";
+
 function Banner({ }: Props) {
     const handlePDFDownloadClick = () => {
-        const fileToDownload = '../utils/Pujan_Thing_Software_Developer.pdf';
+        const fileToDownload = `/utils/${Resume_file_name}.pdf`;
 
         const link = document.createElement('a');
         link.href = fileToDownload;
-        link.download = "Pujan_Thing_Software_Developer.pdf";
+        link.download = `${Resume_file_name}.pdf`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
 
     const handleDOCXDownloadClick = () => {
-        // Replace 'your_file_url' with the actual URL of the file you want to download
-        const fileToDownload = '../utils/Pujan_Thing_Software_Developer.docx';
+        const fileToDownload = `/utils/${Resume_file_name}.docx`;
 
         // Create a hidden anchor element to trigger the download
         const link = document.createElement('a');
         link.href = fileToDownload;
-        link.download = "Pujan_Thing_Software_Developer.docx";
+        link.download = `${Resume_file_name}.docx`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

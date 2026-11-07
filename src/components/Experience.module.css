@@ -65,6 +65,10 @@
     color: white;
 }
 
+.skills__highlight > p{
+    align-content: center;
+}
+
 .skills__highlight > ul{
     list-style: none;
     display: flex;
