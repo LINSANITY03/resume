@@ -5,7 +5,7 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
-function Experience({ }: Props) {
+function Experience({ setSelectedPage }: Props) {
     return (
         <section className={style.main__container} id="experience">
             <div className={style.working__container}>

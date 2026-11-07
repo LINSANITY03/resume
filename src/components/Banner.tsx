@@ -9,7 +9,7 @@ type Props = {
 
 const Resume_file_name = "Pujan_Thing_Resume";
 
-function Banner({ }: Props) {
+function Banner({ setSelectedPage }: Props) {
     const handlePDFDownloadClick = () => {
         const fileToDownload = `/utils/${Resume_file_name}.pdf`;
 

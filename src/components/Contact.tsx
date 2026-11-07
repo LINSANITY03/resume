@@ -8,7 +8,7 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
-function Contact({ }: Props) {
+function Contact({ setSelectedPage }: Props) {
     return (
         <section className={style.contact__container} id="contact">
             <p className={style.contact__title}>Get in touch?</p>
