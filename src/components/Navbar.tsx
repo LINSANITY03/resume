@@ -61,7 +61,7 @@ function Navbar(Props: Props) {
                 <span />
                 <span />
             </button>
-            <ul className={`${styles.nav_components} ${menuOpen ? styles.nav_components_open : ""}`}>
+            <ul id="primary-navigation" className={`${styles.nav_components} ${menuOpen ? styles.nav_components_open : ""}`} onClick={closeMenu}>
                 <Link page="Home" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
                 <Link page="Experience" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
                 <Link page="Project" selectedPage={Props.selectedPage} setSelectedPage={Props.setSelectedPage} />
