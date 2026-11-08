@@ -1,32 +1,112 @@
 .main_navbar{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    align-items: center;
+    padding: 18px 5%;
     z-index: 99;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar__change{
     background: whitesmoke;
-    transition: all 0.5s ease-out;
     box-shadow: 3px 10px 17px #bdbebf;
 }
 
 .nav_components{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    column-gap: 50px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
     list-style: none;
-    margin-right: 10%;
+    margin: 0 5% 0 0;
+    padding: 0;
     font-weight: 600;
+}
+
+/* Hamburger button - hidden on desktop */
+.menu_toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.menu_toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 3px;
+    background: #222;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animate hamburger into an X */
+.menu_toggle_open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu_toggle_open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu_toggle_open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 @media screen and (max-width: 768px) {
 
-    .main_navbar > ul {
-        display: none;
-        color: aqua;
+    .main_navbar {
+        padding: 12px 20px;
+        justify-content: flex-end;
     }
 
+    .menu_toggle {
+        display: block;
+    }
+
+    .nav_components {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 16px;
+        width: min(260px, calc(100vw - 32px));
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin: 0;
+        padding: 10px 0;
+        background: whitesmoke;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav_components_open {
+        display: flex;
+    }
+
+    .nav_components > * {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 20px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 380px) {
+    .main_navbar {
+        padding: 10px 14px;
+    }
+
+    .nav_components {
+        right: 10px;
+        width: calc(100vw - 20px);
+    }
 }

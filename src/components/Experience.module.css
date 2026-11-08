@@ -1,20 +1,28 @@
 .main__container{
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 100px;
-    padding: 20px;
+    padding: 20px 24px;
 }
 
 .working__container{
     background: rgba(4, 18, 212, 0.75);
     padding: 20px;
     border-radius: 30px;
+    width: 100%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .title__text{
-    font-size: 4em;
+    font-size: clamp(2.2rem, 6vw, 4rem);
     color: white;
     display: flex;
     align-items: center;
-    width: 65%;
+    width: 100%;
+    margin: 0 0 25px;
+    line-height: 1.2;
 }
 
 .title__text::after{
@@ -23,10 +31,19 @@
     margin-left: 1rem;
     height: 1px;
     background-color: white;
+    min-width: 20px;
 }
 
 .experience__container{
-    padding: 20px;
+    padding: 20px 10px;
+}
+
+.experience__title {
+    margin: 0 0 12px;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    line-height: 1.4;
+    color: white;
+    overflow-wrap: anywhere;
 }
 
 .company__text{
@@ -36,7 +53,8 @@
 .work__duration{
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
     color: white;
 }
 
@@ -51,6 +69,8 @@
     position: relative;
     padding-left: 40px;
     margin-bottom: 10px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
 .exp__highlights > ul > li::before{
@@ -63,6 +83,16 @@
     display: flex;
     margin-top: 20px;
     color: white;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+}
+
+.skills__title {
+    margin: 0;
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .skills__highlight > p{
@@ -74,6 +104,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    flex: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .skills__highlight > ul >li{
@@ -81,4 +114,84 @@
     padding: 5px 10px;
     border-radius: 12px;
     font-weight: 600;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        margin-top: 65px;
+        padding: 15px;
+    }
+
+    .working__container {
+        padding: 25px 20px;
+        border-radius: 22px;
+    }
+
+    .experience__container {
+        padding: 18px 5px;
+    }
+
+    .skills__highlight {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .skills__highlight > ul {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .main__container {
+        margin-top: 45px;
+        padding: 12px;
+    }
+
+    .working__container {
+        padding: 22px 15px;
+        border-radius: 18px;
+    }
+
+    .title__text {
+        margin-bottom: 15px;
+        font-size: 2.2rem;
+    }
+
+    .title__text::after {
+        margin-left: 10px;
+    }
+
+    .experience__container {
+        padding: 15px 0;
+    }
+
+    .experience__title {
+        font-size: 1.2rem;
+    }
+
+    .work__duration {
+        font-size: 0.85rem;
+    }
+
+    .exp__highlights > ul > li {
+        padding-left: 25px;
+        font-size: 0.9rem;
+    }
+
+    .skills__title {
+        font-size: 1rem;
+    }
+
+    .skills__highlight > ul {
+        gap: 8px;
+    }
+
+    .skills__highlight > ul > li {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
 }

@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.1312e3b6.css",
-    "main.js": "/resume/static/js/main.16862582.js",
-    "static/js/787.883ba16e.chunk.js": "/resume/static/js/787.883ba16e.chunk.js",
-    "static/media/myagentsai.png": "/resume/static/media/myagentsai.f03ff8a8b346cff2394c.png",
-    "static/media/dashboard.png": "/resume/static/media/dashboard.e76929cee1d683ba9ffc.png",
-    "static/media/newssarathi.png": "/resume/static/media/newssarathi.fad748cc93668137f41a.png",
-    "static/media/code.png": "/resume/static/media/code.172e568b34c38110e5f3.png",
-    "static/media/cashmere.jpg": "/resume/static/media/cashmere.51afa687093518c59019.jpg",
-    "static/media/conversify.png": "/resume/static/media/conversify.6ac0cd88673aa164ed99.png",
-    "static/media/Poppins-Regular.ttf": "/resume/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/mediahub.png": "/resume/static/media/mediahub.b9f43a2aa45b063546e6.png",
-    "static/media/events.png": "/resume/static/media/events.ebd70e76b1fe434395fe.png",
-    "static/media/game.jpg": "/resume/static/media/game.cbcae648ad2d35a6b09c.jpg",
-    "static/media/cli.png": "/resume/static/media/cli.7585e71b21bd08bface2.png",
-    "static/media/confusion_matrix.png": "/resume/static/media/confusion_matrix.777584e3ddc16609bd3b.png",
-    "index.html": "/resume/index.html",
-    "main.1312e3b6.css.map": "/resume/static/css/main.1312e3b6.css.map",
-    "main.16862582.js.map": "/resume/static/js/main.16862582.js.map",
-    "787.883ba16e.chunk.js.map": "/resume/static/js/787.883ba16e.chunk.js.map"
+    "main.css": "/static/css/main.bf6d5d7e.css",
+    "main.js": "/static/js/main.eb95529f.js",
+    "static/js/787.883ba16e.chunk.js": "/static/js/787.883ba16e.chunk.js",
+    "static/media/myagentsai.png": "/static/media/myagentsai.f03ff8a8b346cff2394c.png",
+    "static/media/dashboard.png": "/static/media/dashboard.e76929cee1d683ba9ffc.png",
+    "static/media/newssarathi.png": "/static/media/newssarathi.fad748cc93668137f41a.png",
+    "static/media/code.png": "/static/media/code.172e568b34c38110e5f3.png",
+    "static/media/cashmere.jpg": "/static/media/cashmere.51afa687093518c59019.jpg",
+    "static/media/conversify.png": "/static/media/conversify.6ac0cd88673aa164ed99.png",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/mediahub.png": "/static/media/mediahub.b9f43a2aa45b063546e6.png",
+    "static/media/events.png": "/static/media/events.ebd70e76b1fe434395fe.png",
+    "static/media/game.jpg": "/static/media/game.cbcae648ad2d35a6b09c.jpg",
+    "static/media/cli.png": "/static/media/cli.7585e71b21bd08bface2.png",
+    "static/media/confusion_matrix.png": "/static/media/confusion_matrix.777584e3ddc16609bd3b.png",
+    "index.html": "/index.html",
+    "main.bf6d5d7e.css.map": "/static/css/main.bf6d5d7e.css.map",
+    "main.eb95529f.js.map": "/static/js/main.eb95529f.js.map",
+    "787.883ba16e.chunk.js.map": "/static/js/787.883ba16e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1312e3b6.css",
-    "static/js/main.16862582.js"
+    "static/css/main.bf6d5d7e.css",
+    "static/js/main.eb95529f.js"
   ]
 }

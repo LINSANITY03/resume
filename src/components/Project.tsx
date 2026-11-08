@@ -37,7 +37,7 @@ export default function Project(props: Props) {
                                         <h3 className={style.project__name}>{item.project_name}</h3>
                                         <div className={style.project__content}>
                                             <div className={style.project__image}>
-                                                <img className={style.ns__img} src={item.img} alt={item.project_name} width='700' height='450' />
+                                                <img className={style.ns__img} src={item.img} alt={item.project_name} width='700' height='450' loading="lazy"/>
                                             </div>
                                             <div className={style.project__details}>
 
@@ -51,12 +51,21 @@ export default function Project(props: Props) {
                                                     })
                                                     }
                                                 </ul>
-                                                {item.link ?
-                                                    <a className={style.external__link} href={item.link} target='_blank' rel="noreferrer">
-
-                                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                                                    </a> : ""
-                                                }
+                                                {item.link && (
+                                                <div className={style.project__actions}>
+                                                    <a
+                                                        className={style.external__link}
+                                                        href={item.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        aria-label={`Visit ${item.project_name}`}
+                                                    >
+                                                        <FontAwesomeIcon
+                                                            icon={faArrowUpRightFromSquare}
+                                                        />
+                                                    </a>
+                                                </div>
+                                            )}
                                             </div>
                                         </div>
 
@@ -81,7 +90,7 @@ export default function Project(props: Props) {
                                         <h3 className={style.project__name}>{item.project_name}</h3>
                                         <div className={style.project__content}>
                                             <div className={style.project__image}>
-                                                <img className={style.ns__img} src={item.img} alt='NewsSarathi' width='700' height='450' />
+                                                <img className={style.ns__img} src={item.img} alt='NewsSarathi' width='700' height='450' loading="lazy"/>
                                             </div>
                                             <div className={style.project__details}>
 
@@ -100,7 +109,8 @@ export default function Project(props: Props) {
                                                     {item.link ?
                                                         item.link.map((links, idx) => {
                                                             return (
-                                                                <a className={style.external__link} href={links} target='_blank' rel="noreferrer" key={idx}>
+                                                                <a className={style.external__link} href={links} target='_blank' rel="noreferrer" key={idx}
+                                                                aria-label={`View ${item.project_name} on GitHub`}>
                                                                     <FontAwesomeIcon icon={faGithubSquare} size="2x" />
                                                                 </a>
 
@@ -120,14 +130,25 @@ export default function Project(props: Props) {
                     </div>
 
                     {/* More Button */}
-                    <div className={style.logo_container} onClick={() => setshowAll(!showAll)}>
-                        <div className={style.wrapper_container}>
-                            <span>{showAll? "Show less" : "Show more"}</span>
-                            <div className={style.show_more}>
-                                {showAll ? <FontAwesomeIcon icon={faLongArrowUp} beat/> : <FontAwesomeIcon icon={faLongArrowDown} beat/>}
-                            </div>
-                        </div>
+                    {SideProjectData.length > initialCount && (
+                        <div className={style.logo_container} onClick={() => setshowAll(!showAll)}>
+                        <button
+                                type="button"
+                                className={style.wrapper_container}
+                                onClick={() => setshowAll(!showAll)}
+                                aria-expanded={showAll}
+                            >
+                                <span>
+                                    {showAll ? "Show less" : "Show more"}
+                                </span>
+
+                                <FontAwesomeIcon
+                                    icon={showAll ? faLongArrowUp : faLongArrowDown}
+                                />
+                            </button>
                     </div>
+                    )}
+                    
 
                 </div>
 

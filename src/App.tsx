@@ -3,7 +3,7 @@ import Home from "./layouts/index";
 
 function App() {
   return (
-    <BrowserRouter basename="/resume">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

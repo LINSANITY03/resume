@@ -11,21 +11,38 @@ type Props = {
 function Contact({ setSelectedPage }: Props) {
     return (
         <section className={style.contact__container} id="contact">
-            <p className={style.contact__title}>Get in touch?</p>
-            <p className={style.short__description}>Connect with me on Github, linkedin and feel free to reach out.</p>
-            <div className={style.icons__list}>
-                <a style={{ color: 'white' }} href="https://www.linkedin.com/in/pujan-thing-46ba4a1bb/" target='_blank' rel="noreferrer">
+            <div className={style.contact__content}>
+                <h2 className={style.contact__title}>
+                    Get in touch?
+                </h2>
+                <p className={style.short__description}>Connect with me on Github, LinkedIn, or feel free to reach out directly.</p>
+                <div className={style.icons__list}>
+                    <a 
+                        href="https://www.linkedin.com/in/pujan-thing-46ba4a1bb/" 
+                        target='_blank' rel="noopener noreferrer"
+                        aria-label="Visit my LinkedIn profile"
+                    >
+                        <FontAwesomeIcon icon={faLinkedin} size='2x' />
+                    </a>
+                    <a 
+                        href="https://github.com/LINSANITY03" 
+                        target='_blank' 
+                        rel="noopener noreferrer"
+                        aria-label="Visit my GitHub profile"
+                    >
+                        <FontAwesomeIcon icon={faGithub} size='2x' />
+                    </a>
+                    <a 
+                        href="mailto:pujantamang92@gmail.com" 
+                        aria-label="Send me an email"
+                    >
+                        <FontAwesomeIcon icon={faEnvelope} size='2x' />
+                    </a>     
+                </div>
 
-                    <FontAwesomeIcon icon={faLinkedin} size='2x' />
-                </a>
-                <a style={{ color: 'white' }} href="https://github.com/LINSANITY03" target='_blank' rel="noreferrer">
-
-                    <FontAwesomeIcon icon={faGithub} size='2x' />
-                </a>
-                <a style={{ color: 'white' }} href="mailto:pujantamang92@gmail.com" target='_blank' rel="noreferrer">
-
-                    <FontAwesomeIcon icon={faEnvelope} size='2x' />
-                </a>
+                <p className={style.footer__text}>
+                    © {new Date().getFullYear()} Pujan Thing. All rights reserved.
+                </p>
             </div>
         </section>
     )

@@ -1,12 +1,19 @@
 .main__container{
     margin-top: 100px;
-    padding: 20px;
+    padding: 20px 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .projects__container{
-
     background: rgba(4, 18, 212, 0.75);
     border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    overflow: hidden;
 }
 
 .professional__container{
@@ -15,82 +22,132 @@
 }
 
 .title__name{
-    font-size: 4em;
-    width: fit-content;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    margin: 0 0 30px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
 }
 
 .each__module{
     display: flex;
-    justify-content: space-evenly;
     margin-top: 50px;
 }
 
 .left__line{
-    border-left: 5px solid white;
+    flex: 0 0 5px;
+    align-self: stretch;
+    background: white;
+    border-radius: 5px;
 }
 
 .project__container{
-    width: 90%;
-    padding: 20px;
+    flex: 1;
+    min-width: 0;
+    padding: 15px 20px 20px 30px;
 }
 
 .project__name{
     position: relative;
     background: black;
     width: fit-content;
-    padding: 20px;
-    left: -40px;
-    top: -10px;
+    padding: 15px 20px;
     z-index: 3;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 20px -40px;
+    color: white;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    line-height: 1.35;
+    overflow-wrap: anywhere;
 }
 
 .project__content{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: 25px;
     
 }
 
-.ns__img{
-    position: relative;
-    z-index: 1;
-    top: -50px;
+.project__image {
+    width: 100%;
+    min-width: 0;
 }
 
+.ns__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
 .project__details{
-    position: relative;
-    left: -30px;
     text-align: right;
     width: 100%;
-    z-index: 10;
+    min-width: 0;
     
 }
 .description{
     background: rgb(4, 18, 212);
     padding: 20px;
+    margin: 0;
+    color: white;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
 .skill__used{
-    font-size: 0.8em;
+    font-size: 0.85rem;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     list-style: none;
+    justify-content: flex-end;
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill__used li {
+    padding: 6px 10px;
+    background: rgb(66, 133, 244);
+    border-radius: 8px;
+    overflow-wrap: anywhere;
 }
 
 .external__link{
     color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: transform 0.2s ease;
+}
+
+.external__link:hover {
+    transform: translateY(-3px);
+}
+
+.project__actions {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .sideProject__container{
     margin-top: 50px;
     color: white;
+    padding: 0 30px;
 }
 
 .sd_title{
-    margin-top: 50px;
-    font-size: 3em;
+    font-size: clamp(2rem, 5vw, 3rem);
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin: 0 0 30px;
+    line-height: 1.2;
 }
 
 .sd_title::before, .sd_title::after{
@@ -98,26 +155,156 @@
     flex: 1;
     height: 1px;
     background-color: white;
+    min-width: 15px;
 }
 
 .github__actions{
     display: flex;
     gap: 10px;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .logo_container{
     display: flex;
     justify-content: center;
+    padding: 25px 15px 10px;
 }
 
-.wrapper_container{
-    display: flex;
-    padding: 10px;
-    gap: 5px;
+.wrapper_container {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    background-color: aliceblue;
+    gap: 10px;
+    padding: 12px 22px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    opacity: 0.3;
+    border: none;
+    border-radius: 8px;
+    background-color: aliceblue;
+    color: #111;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.wrapper_container:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.wrapper_container:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .main__container {
+        margin-top: 65px;
+        padding: 15px;
+    }
+
+    .professional__container {
+        padding: 25px 20px;
+    }
+
+    .project__container {
+        padding-left: 25px;
+    }
+
+    .project__content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .project__details {
+        text-align: left;
+    }
+
+    .skill__used {
+        justify-content: flex-start;
+    }
+
+    .project__actions,
+    .github__actions {
+        justify-content: flex-start;
+    }
+
+    .sideProject__container {
+        padding: 0 20px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .main__container {
+        margin-top: 45px;
+        padding: 12px;
+    }
+
+    .projects__container {
+        border-radius: 12px;
+    }
+
+    .professional__container {
+        padding: 22px 15px;
+    }
+
+    .title__name {
+        font-size: 2.1rem;
+    }
+
+    .each__module {
+        margin-top: 30px;
+    }
+
+    .project__container {
+        padding: 10px 5px 15px 20px;
+    }
+
+    .project__name {
+        margin-left: -25px;
+        padding: 12px 15px;
+        font-size: 1.1rem;
+    }
+
+    .project__content {
+        gap: 15px;
+    }
+
+    .description {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .skill__used {
+        gap: 8px;
+        font-size: 0.8rem;
+    }
+
+    .skill__used li {
+        padding: 5px 8px;
+    }
+
+    .sideProject__container {
+        margin-top: 35px;
+        padding: 0 15px;
+    }
+
+    .sd_title {
+        gap: 10px;
+        font-size: 1.8rem;
+    }
+
+    .wrapper_container {
+        padding: 11px 18px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .external__link,
+    .wrapper_container {
+        transition: none;
+    }
 }

@@ -1,36 +1,83 @@
 .banner_main{
-    padding-top: 75px;
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 75px 24px 40px;
+    background-color: #ffffff;
+    overflow-x: clip;
 }
 
 .banner_container{
-    margin-top: 60px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto 0;
 }
 
 .box__container{
     display: grid;
-    grid-template-rows: (1, auto);
+    grid-template-columns: 1fr;
     justify-content: center;
+    gap: 35px;
+    width: 100%;
 }
 
 .description{
+    width: 100%;
     text-align: start;
 }
 
 .description_text{
-    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: clamp(1.4rem, 3vw, 1.875rem);
+    line-height: 1.35;
+    font-weight: 500;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(66, 133, 244) 25%,
+        rgb(52, 168, 83) 75%
+    );
     background-clip: text;
-    background-color: rgb(66,133,244);
-    background-image: linear-gradient(to bottom,rgb(66,133,244) 25%,rgb(52,168,83) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;}
+
+.name {
+    display: inline-block;
+    font-size: clamp(2.3rem, 6vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.role {
+    display: inline-block;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    line-height: 1.25;
+}
+
+.role_highlight {
+    font-weight: 800;
 }
 
 .download__modal{
-    display: block;
-    margin-top: 85px;
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    margin: 45px auto 0;
+    padding: 25px 30px;
     text-align: center;
-    background: rgb(52,168,83, 0.4);
-    padding: 10px;
+    background: rgba(52, 168, 83, 0.15);
     border-radius: 15px;
+}
+
+.download__title {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    font-weight: 800;
+}
+
+.download__description {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .download__options{
@@ -48,10 +95,21 @@
     cursor: pointer;
     font-weight: 500;
     width: 100%;
+    max-width: 200px;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .pdf_icon, .docx_icon{
-    color: white
+    color: white;
+    font-size: 1.2rem;
 }
 
 .pdf__color{
@@ -61,6 +119,7 @@
 .docx__color{
     background: rgb(32, 65, 211, 0.9); 
 }
+
 .pdf__cont, .docx__cont{
     color: white;
     padding: 10px 10px;
@@ -69,11 +128,111 @@
 
 .pdf__cont:hover{
     background: rgb(167, 31, 31); 
+    transform: translateY(-2px);
 }
 
 .docx__cont:hover{
     background: rgb(32, 65, 211); 
+    transform: translateY(-2px);
+}
+
+.download__box:focus-visible {
+    outline: 3px solid #222222;
+    outline-offset: 4px;
 }
 
 @media screen and (max-width: 768px) {
+    .banner_main {
+        padding: 65px 24px 35px;
+    }
+
+    .banner_container {
+        margin-top: 45px;
+    }
+
+    .box__container {
+        gap: 25px;
+    }
+
+    .download__modal {
+        margin-top: 25px;
+        padding: 22px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .banner_main {
+        padding: 65px 18px 30px;
+    }
+
+    .banner_container {
+        margin-top: 35px;
+    }
+
+    .description_text {
+        line-height: 1.4;
+    }
+
+    .name {
+        font-size: clamp(2rem, 9vw, 2.7rem);
+    }
+
+    .role {
+        font-size: clamp(1.65rem, 7.5vw, 2.3rem);
+    }
+
+    .download__modal {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+
+    .download__description {
+        font-size: 0.9rem;
+    }
+
+    .download__options {
+        gap: 12px;
+    }
+
+    .download__box {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small phones */
+@media screen and (max-width: 350px) {
+    .banner_main {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .name {
+        font-size: 1.9rem;
+    }
+
+    .role {
+        font-size: 1.55rem;
+    }
+
+    .download__options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download__box {
+        max-width: 100%;
+    }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .download__box {
+        transition: none;
+    }
+
+    .download__box:hover {
+        transform: none;
+    }
 }
